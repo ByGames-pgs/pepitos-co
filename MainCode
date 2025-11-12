@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pepito's C.O — Conectando innovación y comunidad</title>
+  <meta name="description" content="Pepito's C.O: empresa que combina tecnología y creatividad para ofrecer productos únicos con impacto local.">
+  <link rel="icon" href="IdkIsotipo.png">
+  <style>
+    :root {
+      --bg: #f6fff6;
+      --accent: #26b82b; /* verde intenso */
+      --orange: #f78b3d;
+      --orange-hover: #ff9f50;
+      --dark: #1a1a1a;
+      --muted: #555;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px 10px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+    }
+
+    .brand strong {
+      font-size: 1.2rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      margin-left: 20px;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    /* 🔸 Línea naranjo debajo del header */
+    .linea-naranja {
+      width: 100%;
+      height: 4px;
+      background-color: var(--orange);
+      border: none;
+      margin-top: 10px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .hero img {
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      margin-top: 30px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    /* 🔹 Sección de producto individual */
+    section#productos {
+      padding: 80px 40px;
+      background: #f9fff9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    section#productos img {
+      width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .product-info {
+      max-width: 500px;
+    }
+
+    .product-info h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .product-info button {
+      background: var(--orange);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.25s, transform 0.15s;
+    }
+
+    .product-info button:hover {
+      background: var(--orange-hover);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: white;
+      border-top: 1px solid #e4e4e4;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="IdkIsotipo.png" alt="Logo de Pepito's C.O">
+      <div>
+        <strong>Pepito's C.O</strong><br>
+        <span style="font-size:13px;color:var(--muted)">Unidos por la señal, conectados por la esperanza</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+    </nav>
+    <div class="linea-naranja"></div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h1>Bienvenido a Pepito's C.O</h1>
+    <p>Somos una empresa que apuesta por el futuro de nuestra sociedad ayudando con tecnología especial y gratuita.</p>
+    <img src="IdkIsotipo.png" alt="Foto placeholder">
+    <p>poner aqui el imasologo una wae asi</p>
+  </section>
+
+  <section id="productos">
+    <img src="bodrio.jpg" alt="Router Pepito">
+    <div class="product-info">
+      <h2>Ns aun</h2>
+      <p>Un router de alta potencia diseñado especialmente para zonas rurales. Proporciona conexión 5G estable y de largo alcance.</p>
+      <button>Solicitar</button>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Pepito's C.O — Todos los derechos reservados.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
