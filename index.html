@@ -52,11 +52,15 @@
       color: var(--accent);
     }
 
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
     nav a {
       text-decoration: none;
       color: var(--dark);
       font-weight: 600;
-      margin-left: 20px;
       transition: color 0.2s;
     }
 
@@ -64,7 +68,6 @@
       color: var(--orange);
     }
 
-    /* 🔸 Línea naranjo debajo del header */
     .linea-naranja {
       width: 100%;
       height: 4px;
@@ -80,7 +83,7 @@
     }
 
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       color: var(--accent);
       margin-bottom: 10px;
     }
@@ -100,7 +103,6 @@
       max-width: 600px;
     }
 
-    /* 🔹 Sección de producto individual */
     section#productos {
       padding: 80px 40px;
       background: #f9fff9;
@@ -157,6 +159,74 @@
       border-top: 1px solid #e4e4e4;
       color: var(--muted);
       font-size: 14px;
+    }
+
+    /* 📱 Soporte móvil */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand {
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 60px 15px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      section#productos {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      section#productos img {
+        width: 90%;
+        max-width: 350px;
+      }
+
+      .product-info h2 {
+        font-size: 1.6rem;
+      }
+
+      .product-info p {
+        font-size: 0.95rem;
+      }
+
+      .product-info button {
+        width: 80%;
+      }
+    }
+
+    /* 📱 Pantallas muy pequeñas */
+    @media (max-width: 480px) {
+      .brand img {
+        width: 45px;
+        height: 45px;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .product-info button {
+        width: 100%;
+        padding: 14px;
+      }
     }
   </style>
 </head>
